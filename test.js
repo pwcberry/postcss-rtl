@@ -108,3 +108,16 @@ test( 'Should correctly process values containing !important', t => run( t,
     '[dir=ltr] .test { margin-left:0 !important; padding-left:0 !important } ' +
     '[dir=rtl] .test { margin-right:0 !important; padding-right:0 !important }'
 ) )
+
+test('Should correctly ignore rule', t => run(t, 
+    '/* rtl:ignore-start */ .align-start { text-align: left } /* rtl:ignore-end */',
+    '/* rtl:ignore-start */ .align-start { text-align: left } /* rtl:ignore-end */',
+))
+
+test('Should ignore rule and process rule', t => run(t, 
+    '/* rtl:ignore-start */ .align-start { text-align: left } /* rtl:ignore-end */ ' +
+    '.align-end { text-align: right }',
+    '/* rtl:ignore-start */ .align-start { text-align: left } /* rtl:ignore-end */ ' + 
+    '[dir=ltr] .align-end { text-align: right } ' +
+    '[dir=rtl] .align-end { text-align: left }'
+))

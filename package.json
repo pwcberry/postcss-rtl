@@ -1,6 +1,6 @@
 {
-  "name": "postcss-rtl",
-  "version": "0.5.10",
+  "name": "@nintex-ux/postcss-rtl",
+  "version": "0.6.0",
   "description": "PostCSS plugin for RTL-optimizations",
   "keywords": [
     "postcss",
@@ -14,10 +14,7 @@
   ],
   "author": "Vladimir Kalinichev <wrumly@gmail.com>",
   "license": "MIT",
-  "repository": "https://github.com/vkalinichev/postcss-rtl",
-  "bugs": {
-    "url": "https://github.com/vkalinichev/postcss-rtl/issues"
-  },
+  "repository": "https://nintex.visualstudio.com/Nintex/_git/ux-postcss-rtl",
   "homepage": "https://github.com/vkalinichev/postcss-rtl",
   "main": "lib/index.js",
   "files": [

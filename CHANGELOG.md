@@ -4,6 +4,9 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.6.0] - 2017-07-26
+- Added behavior to exclude rules from processing by using annotations written in comments
+
 ## [0.5.0] - 2016-12-13
 - Added `prefixType` option 
 

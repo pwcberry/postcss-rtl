@@ -173,7 +173,22 @@ module.exports = {
 * `prefixType`: Switches between adding attrinbutes and classes. Optional: 
     * `attribute` (by default, recommended): `.foo` => `[dir=rtl] .foo`
     * `class` (useful for IE6): `.foo` => `.dir-rtl .foo`
+
+### Ignore rules while processing
+* To exclude rules from processing, book-end the rules with `/* rtl:ignore-start */` and `/* rtl:ignore-end */`
+    Example (only the `.align-end` rule will be processed):
+    ```css
+    /* rtl:ignore-start */
+    .align-start {
+        text-align: left;
+    }
+    /* rtl:ignore-end */
       
+    .align-end {
+        text-align: right;
+    }
+    ```
+
 ## Future
 - Processing [rtlcss-directives]
 
